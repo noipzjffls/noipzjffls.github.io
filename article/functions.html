@@ -65,19 +65,19 @@
     <h4 class="para">输出：</h4>
     <img src="file:///Users/Eric/Desktop/noipzjffls/5.png" width="662" height="126">
     <h4 class="para">对于3，我们可以使用递归，如：</h4>
-    <h3 class="code"><p>#include<iostream>//头文件</p>
+    <h3 class="code"><p>#include&lt;iostream&gt;//头文件</p>
 <p>using namespace std;//引用名字空间</p>
 <p>int a;//定义变量</p>
 <p>int f(int x)</p>
 <p>{</p>
-<p>    if(x==0)return 1;</p>
-<p>    return f(x-1)*x;</p>
+<p>&nbsp;&nbsp;if(x==0)return 1;</p>
+<p>&nbsp;&nbsp;return f(x-1)*x;</p>
 <p>}</p>
 <p>int main()//主函数</p>
 <p>{</p>
-<p>    cin&gt;&gt;a;</p>
-<p>    cout&lt;&lt;f(a);//输出a的阶乘</p>
-<p>    return 0;</p>
+<p>&nbsp;&nbsp;cin&gt;&gt;a;</p>
+<p>&nbsp;&nbsp;cout&lt;&lt;f(a);//输出a的阶乘</p>
+<p>&nbsp;&nbsp;return 0;</p>
 <p>}
 </p></h3>
     <h4 class="para">这个程序是输出a的阶乘的，是通过函数自己调用自己实现的（第7行）。注意第4行有int（代表函数返回类型），说明函数中的return后面要跟int类型的数据，而如果是void，则需写return;。</h4>
