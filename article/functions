@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>C++函数初步</title>
+    </head>
+    <style>
+        body {
+            background-color: rgb(0, 255, 255);
+        }
+        #credit {
+            font-family: monospace;
+            color: rgb(0, 0, 255);
+            text-align: center;
+        }
+        #title {
+            font-family: fantasy;
+            text-decoration: underline;
+            text-align: center;
+            color: rgb(222, 111, 0);
+        }
+        .para{
+            color: rgb(0, 0, 0);
+            font-family: serif;
+        }
+        .bold{
+            color:rgb(255, 0, 0);
+            font-family: serif;
+        }
+        #go-back {
+            font-family: arial;
+        }
+    </style>
+    <body>
+    <h1 id="title">关于C++函数初步</h1>
+    <h2 id="credit">沈悠然</h2>
+    <h4 class="para">我们知道，C++源代码是与函数分不开的。哪怕是最简单的Hello World的无输入程序也需要main函数的参加。
+</h4>
+    <h4 class="para">那么，函数有哪些用途呢？
+</h4>
+    <h4 class="para"><p>1、整个程序的包装</p>
+<p>像上文所说的，任何一个C++程序都需要main函数，main函数起一个包装的作用。</p>
+<p>2、使程序表述更加清晰</p>
+<p>我们有时可能会多次运用到同一个（组）语句，我们这时可以将它放入函数（一般为void形式，指不返回任何值）</p>
+<p>3、进行main函数无法完成的任务</p>
+<p>递归、搜索是函数价值的体现。这些功能在main函数的单独参与下是难以完成的。</p>
+</h4>
+    <h4 class="para">对于1，我们一般会有：</h4>
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E5%9B%BE%E7%89%871.png" width="744" height="342">
+    <h4 class="para"><p>这是一个最基本的一个程序，我们来对其进行分析：</p>
+<p>（1）虽然数据结构（变量等）不需要头文件，但如果没有头文件，那么就无法输入输出，这样程序的意义何在？（就像在工厂中可以直接完成加工，但是没有原材料，也没有最终产品上市）
+</p><p>（2）名字空间一般为std，std是standard（标准）的缩写。cin、cout、STL功能等均需要使用。如果不加using namespace std;，那么就需要在cout、endl前面加上std::，如：
+</p></h4>
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E5%9B%BE%E7%89%872.png" width="942" height="286">
+    <h4 class="para">（3）主函数一般前面加int，为返回值；程序最后要加return 0;语句。</h4>
+    <br><br>
+    <h4 class="para">对于2，我们可以有：
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E5%9B%BE%E7%89%873.png" width="778" height="680">
+    <h4 class="para">虽然我们可以直接用cout<<a<<endl<<b<<endl;，但是这样做可以让大家明白函数的意义。</h4>
+    <h4 class="para">输入：</h4>
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E5%9B%BE%E7%89%874.png" width="88" height="38">
+    <h4 class="para">输出：</h4>
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E5%9B%BE%E7%89%875.png" width="662" height="126">
+    <h4 class="para">对于3，我们可以使用递归，如：</h4>
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E5%9B%BE%E7%89%876.png" width="742" height="672">
+    <h4 class="para">这个程序是输出a的阶乘的，是通过函数自己调用自己实现的（第7行）。注意第4行有int（代表函数返回类型），说明函数中的return后面要跟int类型的数据，而如果是void，则需写return;。</h4>
+    <h4 class="para">输入：</h4>
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E5%9B%BE%E7%89%877.png" width="22" height="36">
+    <h4 class="para">输出：</h4>
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E5%9B%BE%E7%89%878.png" width="724" height="44">
+    <h2 class="para">特别鸣谢：</h2>
+    <img src="file:///Users/Eric/Desktop/noipzjffls/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81.png" width="1044" height="336">
+    <a id="go-back" href="https://noipzjffls.github.io/index.html">返回主页</a>
+    </body>
+</html>
