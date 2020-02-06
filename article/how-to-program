@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>【置顶】如何在平台上编程</title>
+    </head>
+    <style>
+        body {
+            background-color: rgb(0, 255, 255);
+        }
+        .credit {
+            font-family: monospace;
+            color: rgb(0, 0, 255);
+            text-align: center;
+        }
+        #title {
+            font-family: fantasy;
+            text-decoration: underline;
+            text-align: center;
+            color: rgb(222, 111, 0);
+        }
+        .para{
+            color: rgb(0, 0, 0);
+            font-family: serif;
+        }
+        .bold{
+            color:rgb(255, 0, 0);
+            font-family: serif;
+        }
+        .link {
+            font-family: arial;
+        }
+        .code{
+            color:rgb(255, 0, 255);
+            font-family: sans-serif;
+        }
+    </style>
+    <body>
+    <h1 id="title">如何在平台上编程</h1>
+    <h2 class="credit">沈悠然</h2>
+    <h4 class="para">我们需要电脑和合适的软件来运行源代码。
+</h4>
+    <h4 class="para"><p>1、Mac电脑端</p>
+<p>如果是苹果电脑，我们可以使用Xcode。</p></h4>
+    <a class="link" href="https://apps.apple.com/cn/app/xcode/id497799835?mt=12">App Store下载最新正式版本</a>
+    <br><br>
+    <a class="link" href="https://developer.apple.com/download/">Apple Developers下载Beta版本</a>
+    <h4 class="para"><p>2、Windows电脑端</p><p>我们推荐Dev-C++。</p></h4>
+    <a class="link" href="https://sourceforge.net/projects/orwelldevcpp/files/latest/download">下载最新Dev-C++ (SourceForge）</a>
+    <br><br>
+    <h4 class="para"><p>3、适用于所有平台</p><p>我们可以使用VS Code。</p></h4>
+    <a class="link" href="https://code.visualstudio.com/Download">下载最新官方版本</a>
+    <br><br>
+    <a class="link" href="https://noipzjffls.github.io/index.html">返回主页</a>
+    </body>
+</html>
