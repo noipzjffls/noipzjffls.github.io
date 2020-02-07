@@ -35,6 +35,8 @@
     <h1 id="title">P1348 Couple number</h1>
     <h3 id="credit">ericoder</h3>
     <a class="link" href="https://www.luogu.com.cn/problem/P1348">点击进入题目</a>
+    <br><br>
+    <a class="link" href="https://www.luogu.com.cn/blog/shenyouran/P1348">在洛谷博客中查看题解</a>
     <h4 class="para"><p>我们可以很容易地注意到，该题目要求我们在[n1,n2]区间找到满足题意的Couple number N。</p>
 <p>由题意可知，N=a^2-b^2(N∈[n1,n2]且a,b∈Z)。</p>
 <p>而a^2-b^2=(a+b)(a-b)。</p>
@@ -47,7 +49,7 @@
 <p>int main()</p>
 <p>{</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;scanf("%lld%lld",&n1,&n2);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;for(long long i=n1;i<=n2;i++)//在[n1,n2]区间查找</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for(long long i=n1;i&lt;=n2;i++)//在[n1,n2]区间查找</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i&1||(((i&1)==0)&&((i/2)&1)==0))</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//说明：&为按位与，是一种位运算。其计算原理是将两个被操作数转换为二进制，然后看数码都为1的个数。这里是i与1进行按位与，而1转换为二进制为1，因此结果最多为1。这个时候就要看i在二进制下的末位是否为1，而十进制偶数转换为二进制后末位必定为0，只有i为奇数时，i&1才能为真，因此i&1作为条件时等价于i&1==1和i%2==1。
