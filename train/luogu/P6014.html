@@ -52,13 +52,13 @@
 <p>int main()</p>
 <p>{</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d",&n);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;for(int i=1;i<=n;i++)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;for(int i=1;i&lt;=n;i++)</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d",&a[i]);</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum=sum+a[i];//把所有的数加起来</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can[a[i]]++;//记录每个数出现几次</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i=1;i<=n;i++)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i=1;i&lt;=n;i++)</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;need=(sum-a[i])%10;//（need+a[i])%10==sum%10</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(can[need]&&!(need==a[i]&&can[need]==1))//首先，这个数字要出现，否则不成立，其次，need可能等于a[i],若输入的只有一个数==a[i],那么need找不到，同样不成立</p>
@@ -69,7 +69,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;//记录答案并输出，并可直接推出（若不退出，则会输出两次）</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;cout<<0;//没找到，输出0</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;0;//没找到，输出0</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
 <p>}</h3>
     <h2 class="para">温馨提示：我们非常注重学术诚信。请不要直接将我们的代码提交，如果没有思路，可以参考代码，但是不要使用Ctrl+C/Command+C等。感谢您的配合！</h2>
