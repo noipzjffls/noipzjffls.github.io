@@ -57,7 +57,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;"Hello world!"&lt;&lt;endl;</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
 <p>}</p></h3>
-
+<img src="1.png" height="342" width="744"><br><br>
     <h4 class="para"><p>这是一个最基本的一个程序，我们来对其进行分析：</p>
 <p>（1）虽然数据结构（变量等）不需要头文件，但如果没有头文件，那么就无法输入输出，这样程序的意义何在？（就像在工厂中可以直接完成加工，但是没有原材料，也没有最终产品上市）
 </p><p>（2）名字空间一般为std，std是standard（标准）的缩写。cin、cout、STL功能等均需要使用。如果不加using namespace std;，那么就需要在cout、endl前面加上std::，如：
@@ -68,6 +68,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;std::cout&lt;&lt;"Hello world!"&lt;&lt;std::endl;</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
 <p>}</p></h3>
+<img src="2.png" height="286" width="942"><br><br>
     <h4 class="para">（3）主函数一般前面加int，为返回值；程序最后要加return 0;语句。</h4>
     <br><br>
     <h4 class="para">对于2，我们可以有：
@@ -85,9 +86,11 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;print(b);//同上</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
 <p>}</p></h3>
-
+<img src="3.png" height="778" width="680"><br><br>
     <h4 class="para">输入：3&nbsp;24</h4>
+    <img src="4.png" height="88" width="38"><br><br>
     <h4 class="para">输出：<p>3</p><p>24</p><p>Program ended with exit code: 0</p></h4>
+    <img src="5.png" height="126" width="662"><br><br>
     <h4 class="para">对于3，我们可以使用递归，如：</h4>
     <h3 class="code"><p>#include&lt;iostream&gt;//头文件</p>
 <p>using namespace std;//引用名字空间</p>
@@ -103,12 +106,16 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;f(a);//输出a的阶乘</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
 <p>}
+    <img src="6.png" height="742" width="672"><br><br>
 </p></h3>
     <h4 class="para">这个程序是输出a的阶乘的，是通过函数自己调用自己实现的（第7行）。注意第4行有int（代表函数返回类型），说明函数中的return后面要跟int类型的数据，而如果是void，则需写return;。</h4>
     <h4 class="para">输入：5</h4>
+    <img src="7.png" height="36" width="22"><br><br>
     <h4 class="para">输出：<p>120</p><p>Program ended with exit code: 0</p></h4>
+    <img src="8.png" height="44" width="724"><br><br>
     <h2 class="para">特别鸣谢：</h2>
     <h2 class="credit">Xcode(Version 11.3.1(11C504))</h2>
+    <img src="support.png" height="336" width="1044"><br><br>
     <br><br>
     <a id="go-back" href="https://noipzjffls.github.io/index.html">返回主页</a>
     </body>
