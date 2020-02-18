@@ -44,35 +44,7 @@
         <p>那么，是不是我们要把a[1~n]枚举之后，再枚举a[1~n]，并分别判断成不成立呢？</p>
 <p>不是，我们枚举一遍a[1~n]之后，我们需要的那个数字就已经确定了，这时我们只要判断这个数有没有出现即可。题目说，a[i]<=9,那么，我们只要开一个长度为10的数组，来记录每个数出现过没有即可。
 </p><p>但是，记录有没有出现还不行，如果a[i]==(sum-a[i])%10而且这个数只出现一次呢？所以我们需要记录每个数出现过几次。</p></h4>
-    <h3 class="code"><p>#include&lt;bits/stdc++.h&gt;//万能头文件</p>
-<p>using namespace std;</p>
-<p>int n,a[1000001];</p>
-<p>int sum;</p>
-<p>int need,ans;</p>
-<p>int can[10];</p>
-<p>int main()</p>
-<p>{</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d",&n);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;for(int i=1;i&lt;=n;i++)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d",&a[i]);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum=sum+a[i];//把所有的数加起来</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can[a[i]]++;//记录每个数出现几次</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i=1;i&lt;=n;i++)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;need=(sum-a[i])%10;//（need+a[i])%10==sum%10</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(can[need]&&!(need==a[i]&&can[need]==1))//首先，这个数字要出现，否则不成立，其次，need可能等于a[i],若输入的只有一个数==a[i],那么need找不到，同样不成立</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ans=sum%10;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(ans==0) cout&lt;&lt;10;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else cout&lt;&lt;ans;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;//记录答案并输出，并可直接推出（若不退出，则会输出两次）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;0;//没找到，输出0</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;</p>
-<p>}</h3>
+    <img src="P6014.jpg">
     <h2 class="para">温馨提示：我们非常注重学术诚信。请不要直接将我们的代码提交，如果没有思路，可以参考代码，但是不要使用Ctrl+C/Command+C等。感谢您的配合！</h2>
     <a class="link" href="https://www.luogu.com.cn">返回洛谷页面</a>
     <br><br>
