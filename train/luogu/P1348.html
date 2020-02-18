@@ -45,21 +45,7 @@
 <p>当k∈{x|x=2k+1,k∈Z}时，k+2b∈{x|x=2k+1,k∈Z}。所以N∈{x|x=2k+1,k∈Z}。在这个条件下，只要[n1,n2]区间的一个数m满足m∈{x|x=2k+1,k∈Z}，则m为Couple number。
 </p><p>当k∈{x|x=2k,k∈Z}时，k+2b∈{x|x=2k,k∈Z}。所以N∈{x|x=4k,k∈Z}。在这个条件下，只要[n1,n2]区间的一个数m满足m∈{x|x=4k,k∈Z}，则m为Couple number。
 </p><p>∴综上所述，能被4整除的数和一切奇数都是Couple number。</p></h4>
-    <h3 class="code"><p>#include&lt;cstdio&gt;</p>
-<p>long long n1,n2,ans;//定义长整型数（十年oi一场空，不开long long见祖宗）</p>
-<p>int main()</p>
-<p>{</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;scanf("%lld%lld",&n1,&n2);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;for(long long i=n1;i&lt;=n2;i++)//在[n1,n2]区间查找</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;{</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i&1||(((i&1)==0)&&((i/2)&1)==0))</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//说明：&为按位与，是一种位运算。其计算原理是将两个被操作数转换为二进制，然后看数码都为1的个数。这里是i与1进行按位与，而1转换为二进制为1，因此结果最多为1。这个时候就要看i在二进制下的末位是否为1，而十进制偶数转换为二进制后末位必定为0，只有i为奇数时，i&1才能为真，因此i&1作为条件时等价于i&1==1和i%2==1。
-</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ans++;//答案加1</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;printf("%lld",ans);</p>
-<p>}</p></h3>
+    <img src="P1348.jpg">
     <h2 class="para">温馨提示：我们非常注重学术诚信。请不要直接将我们的代码提交，如果没有思路，可以参考代码，但是不要使用Ctrl+C/Command+C等。感谢您的配合！</h2>
     <a class="link" href="https://www.luogu.com.cn">返回洛谷页面</a>
     <br><br>
