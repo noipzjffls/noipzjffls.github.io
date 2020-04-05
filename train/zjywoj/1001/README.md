@@ -1,3 +1,4 @@
+<title>1001:求商</title>
 <style>.f{color:rgb(0, 0, 0);}</style>
 # 1 题目回顾
 > <h2>题目描述</h2>
