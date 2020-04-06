@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -28,15 +29,17 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
-
+/* Code blocks */
 pre[class*="language-"] {
   padding: .8em;
   overflow: auto;
+  /* border: 1px solid #ddd; */
   border-radius: 3px;
+  /* background: #fff; */
   background: #f5f5f5;
 }
 
-
+/* Inline code */
 :not(pre) > code[class*="language-"] {
   padding: .1em;
   border-radius: .3em;
@@ -138,7 +141,7 @@ pre[class*="language-"] {
 }
 
 
-
+/* JSON */
 .language-json .token.property {
   color: #183691;
 }
@@ -147,13 +150,13 @@ pre[class*="language-"] {
   color: #333;
 }
 
-
+/* CSS */
 code.language-css,
 .language-css .token.function {
   color: #0086b3;
 }
 
-
+/* YAML */
 .language-yaml .token.atrule {
   color: #63a35c;
 }
@@ -162,17 +165,17 @@ code.language-yaml {
   color: #183691;
 }
 
-
+/* Ruby */
 .language-ruby .token.function {
   color: #333;
 }
 
-
+/* Markdown */
 .language-markdown .token.url {
   color: #795da3;
 }
 
-
+/* Makefile */
 .language-makefile .token.symbol {
   color: #795da3;
 }
@@ -185,12 +188,12 @@ code.language-yaml {
   color: #0086b3;
 }
 
-
+/* Bash */
 .language-bash .token.keyword {
   color: #0086b3;
 }
 
-
+/* highlight */
 pre[data-line] {
   position: relative;
   padding: 1em 0 1em 3em;
