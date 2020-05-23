@@ -7,7 +7,12 @@
 #include<iostream>
 using namespace std;
 int n;
-string s[]={"","Today","is","April","Fools","Day!","Here","is","the","contest","of","the","festival!","Let's","play","an","interesting","game!","It","is","very","easy","for","you","to","AK","this","contest!","This","is","only","an","added","problem.","Good","luck!"};//将所有的单词保存，注意第一个是下标0，要置空
+string s[]={"","Today","is","April","Fools","Day!",
+"Here","is","the","contest","of","the","festival!",
+"Let's","play","an","interesting","game!",
+"It","is","very","easy","for","you","to","AK","this","contest!",
+"This","is","only","an","added","problem.",
+"Good","luck!"};//将所有的单词保存，注意第一个是下标0，要置空
 int main()
 {
     cin>>n;//输入
